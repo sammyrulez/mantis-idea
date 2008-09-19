@@ -2,7 +2,7 @@
 <idea-plugin>
     <name>MantisConnect Strikes Back</name>
     <description>
-        MantisConnect for IDEA, originally by SammyRulez; fixed by Alf
+        MantisConnect for IDEA, originally by SammyRulez; updated and maintained by Alf
     </description>
     <version>0.9</version>
     <vendor>Alf</vendor>
