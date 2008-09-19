@@ -4,7 +4,11 @@ Created and first published by Sam Reghenzi (see http://www.kyub.com/blog/?page_
 and the email below)
 
 This plugin is supposed to provide IDEA users with support for Mantis bug tracker. 
-It uses MantisConnect (http://www.futureware.biz/mantisconnect/)
+
+It uses the MantisConnect (http://www.futureware.biz/mantisconnect/) client library.
+The MantisConnect and its use are covered by the License you can find at 
+lib/MantisConnect-LICENSE.txt.
+
 
 
 ================================================================================
