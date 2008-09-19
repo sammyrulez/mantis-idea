@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.kyub.idea.plugin.mantis.gui.console.ConsoleForm">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridBagLayout" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="69358" layout-manager="GridBagLayout" row-count="1" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="166e2" class="javax.swing.JLabel" binding="filtersLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text resource-bundle="com/kyub/idea/plugin/mantis/gui/labels/guiLabels" key="filters_label"/>
+            </properties>
+          </component>
+          <component id="61152" class="javax.swing.JComboBox" binding="filtersCombo">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="5a864" class="javax.swing.JButton" binding="refreshIssuesBtn">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <icon value="com/kyub/idea/plugin/mantis/icons/reload.png"/>
+              <text value=""/>
+              <toolTipText value="Refresh Issues or apply filter"/>
+            </properties>
+          </component>
+          <component id="88e07" class="javax.swing.JButton" binding="solveIssuesBtn">
+            <constraints>
+              <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <icon value="com/kyub/idea/plugin/mantis/icons/check.png"/>
+              <text value=""/>
+              <toolTipText value="Solve selected issues"/>
+            </properties>
+          </component>
+          <component id="b3da1" class="javax.swing.JButton" binding="copydataBtn">
+            <constraints>
+              <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <icon value="com/kyub/idea/plugin/mantis/icons/edit_add.png"/>
+              <text value=""/>
+              <toolTipText value="Insert issue data as comment"/>
+            </properties>
+          </component>
+          <component id="aeeb9" class="javax.swing.JButton" binding="infoBtn">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <icon value="com/kyub/idea/plugin/mantis/icons/help.png"/>
+              <text value=""/>
+              <toolTipText value="Show Issue details"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <scrollpane id="c51b0">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="bb784" class="javax.swing.JTable" binding="issueTable">
+            <constraints/>
+            <properties/>
+          </component>
+        </children>
+      </scrollpane>
+    </children>
+  </grid>
+</form>
