@@ -1,6 +1,39 @@
 MantisConnect for Idea
 
-Created and first published by Sam Reghenzi (see http://www.kyub.com/blog/?page_id=11)
+Created and first published by Sam Reghenzi (see http://www.kyub.com/blog/?page_id=11 
+and the email below)
 
 This plugin is supposed to provide IDEA users with support for Mantis bug tracker. 
 It uses MantisConnect (http://www.futureware.biz/mantisconnect/)
+
+
+================================================================================
+Date: Fri, 19 Sep 2008 12:08:33 +0200
+From: "Sam Reghenzi" <sam at ...>
+Sender: sammyrulez at ...
+To: "Alexey Filippov" <afilippov at ...>
+Subject: Re: MantisConnect for IDEA
+
+As far as you credit me in the readme for the initial work, release it
+as some kind of opensource licese and give mi access to the repository
+is ok.
+
+Sadly I do not use Mantis not Idea anymore.. but who knows.
+
+Thnaks
+
+Sam
+
+2008/9/19 Alexey Filippov <afilippov@acm.org>:
+> Hi Sam,
+> I was searching for an IDEA plugin which would support Mantis, and found one
+> written by you.
+> It helped me a lot, but unfortunately it seems it's not supported since
+> 2006, so I've found the source code and migrated it to a new version of
+> MantisConnect, fixed some NPEs, etc. Is there any public repository so I
+> could publish the changes? If there's none, will you mind me opening a
+> project on Google Code, SourceForge, or somewhere else so that I could share
+> the changes?
+> Sincerely,
+> Alexey "Alf" Filippov
+>
