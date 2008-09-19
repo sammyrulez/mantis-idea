@@ -1,0 +1,15 @@
+<!DOCTYPE idea-plugin PUBLIC "Plugin/DTD" "http://plugins.intellij.net/plugin.dtd">
+<idea-plugin>
+    <name>MantisConnect Strikes Back</name>
+    <description>
+        MantisConnect for IDEA, originally by SammyRulez; fixed by Alf
+    </description>
+    <version>0.9</version>
+    <vendor>Alf</vendor>
+    <idea-version since-build="3000"/>
+    <project-components>
+        <component>
+            <implementation-class>com.kyub.idea.plugin.mantis.MantisIntegration</implementation-class>
+        </component>
+    </project-components>
+</idea-plugin>
