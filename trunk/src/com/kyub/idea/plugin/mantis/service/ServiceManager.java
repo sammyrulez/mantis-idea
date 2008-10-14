@@ -55,11 +55,11 @@ public final class ServiceManager {
         } catch (MalformedURLException e) {
             AlertUtil.displayErrorMessage(LabelManager.getMessageText(Messages.SERVICE_URL_INVALID));
             LOG.error(e);
-            return null;
+            return null; // TODO: NPE-prone
         } catch (MCException e) {
             LOG.error(e);
             AlertUtil.displayErrorMessage(LabelManager.getMessageText(Messages.SERVICE_ERROR));
-            return null;
+            return null; // TODO: NPE-prone
         }
     }
 
