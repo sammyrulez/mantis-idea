@@ -112,6 +112,9 @@ public final class ConfigForm {
 
         ServiceManager serviceManager = ServiceManager.init(endPointText.getText(), usernameText.getText(),
                 new String(passwordPasswordField.getPassword()));
+        if (serviceManager == null)
+            return;
+
         projectsCombo.removeAllItems();
         projects = serviceManager.getProjects();
         for (IProject project : projects) {

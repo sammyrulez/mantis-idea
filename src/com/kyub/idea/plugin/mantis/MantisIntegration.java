@@ -136,7 +136,6 @@ public final class MantisIntegration implements ProjectComponent, Configurable, 
 
     public final void reset() {
         configForm.setData(configData);
-
     }
 
     public final void disposeUIResources() {

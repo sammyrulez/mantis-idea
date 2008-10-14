@@ -7,19 +7,20 @@ import org.jdom.Element;
  */
 public final class SerializableConfigData extends ConfigData {
     public SerializableConfigData(ConfigData data) {
-        this.setEnabled(data.isEnabled());
-        this.setEndpointUrl(data.getEndpointUrl());
-        this.setUsername(data.getUsername());
-        this.setPassword(data.getPassword());
-        this.setProjectId(data.getProjectId());
+        setEnabled(data.isEnabled());
+        setEndpointUrl(data.getEndpointUrl());
+        setUsername(data.getUsername());
+        setPassword(data.getPassword());
+        setProjectId(data.getProjectId());
     }
 
     public final void save(Element element) {
-        writeElement(element, "enabled", Boolean.toString(this.isEnabled()));
-        writeElement(element, "EndpointUrl", this.getEndpointUrl());
-        writeElement(element, "Username", this.getUsername());
-        writeElement(element, "Password", new String(this.getPassword()));
-        writeElement(element, "ProjectId", this.getProjectId().toString());
+        writeElement(element, "enabled", Boolean.toString(isEnabled()));
+        writeElement(element, "EndpointUrl", getEndpointUrl());
+        writeElement(element, "Username", getUsername());
+        writeElement(element, "Password", new String(getPassword()));
+        if (getProjectId() != null)
+            writeElement(element, "ProjectId", getProjectId().toString());
     }
 
     public SerializableConfigData() {
@@ -29,13 +30,13 @@ public final class SerializableConfigData extends ConfigData {
     public SerializableConfigData(Element element) {
         String enab = readElement(element, "enabled");
         if (enab != null)
-            this.setEnabled(Boolean.valueOf(enab));
-        this.setEndpointUrl(readElement(element, "EndpointUrl"));
-        this.setUsername(readElement(element, "Username"));
-        this.setPassword(readElement(element, "Password").toCharArray());
+            setEnabled(Boolean.valueOf(enab));
+        setEndpointUrl(readElement(element, "EndpointUrl"));
+        setUsername(readElement(element, "Username"));
+        setPassword(readElement(element, "Password").toCharArray());
         String pid = readElement(element, "ProjectId");
-        if (pid != null)
-            this.setProjectId(Long.decode(pid));
+        if (!isEmpty(pid))
+            setProjectId(Long.decode(pid));
         System.out.println("pid = " + pid);
     }
 
@@ -51,5 +52,9 @@ public final class SerializableConfigData extends ConfigData {
         Element entry = element.getChild(name);
         // Restore the previously stored value
         return entry == null ? null : entry.getAttributeValue("value");
+    }
+
+    private static boolean isEmpty(String s) {
+        return s == null || s.length() == 0;
     }
 }
